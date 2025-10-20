@@ -43,6 +43,15 @@ python3 -m venv /opt/check_redfish
 mkdir -p /usr/lib64/nagios/plugins/check_redfish/
 ln -s /opt/check_redfish/bin/check_redfish /usr/lib64/nagios/plugins/check_redfish/check_redfish.py
 ```
+Keep in mind that if you are on Ubuntu replace lib64 with lib.
+
+You can check your Plugin Dir with:
+
+```bash
+cat /etc/icinga2/constants.conf | grep 'const PluginDir'
+```
+Example Output:
+> const PluginDir = "/usr/lib/nagios/plugins"
 
 ### Icinga2 and Grafana
 Command definitions and a service config example for Icinga2 can be found in [contrib](contrib).
