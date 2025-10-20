@@ -144,7 +144,7 @@
                     "value": "$redfish_warning$"
                 }
             },
-            "command": "PluginDir + check_redfish/check_redfish.py",
+            "command": "PluginDir + /check_redfish/check_redfish.py",
             "fields": [
                 {
                     "datafield_id": 492,
